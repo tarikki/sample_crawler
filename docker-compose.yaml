@@ -1,0 +1,18 @@
+version: '2'
+services:
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - "4444:4444"
+    shm_size: 1G
+
+  my_scraper:
+    build: .
+    depends_on:
+      - "selenium"
+    environment:
+      - SELENIUM_LOCATION=samplecrawler_selenium_1
+    volumes:
+      - .:/my_scraper
+    # use this command to keep the container running
+    command: tail -f /dev/null
