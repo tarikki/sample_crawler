@@ -11,7 +11,7 @@ services:
     depends_on:
       - "selenium"
     environment:
-      - SELENIUM_LOCATION=samplecrawler_selenium_1
+      - SELENIUM_LOCATION=selenium
     volumes:
       - .:/my_scraper
     # use this command to keep the container running
