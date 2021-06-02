@@ -4,35 +4,91 @@
 #
 #    pip-compile requirements.in
 #
-asn1crypto==0.24.0        # via cryptography
-attrs==19.1.0             # via automat, service-identity, twisted
-automat==0.7.0            # via twisted
-cffi==1.12.3              # via cryptography
-constantly==15.1.0        # via twisted
-cryptography==2.7         # via pyopenssl, service-identity
-cssselect==1.1.0          # via parsel, scrapy
-hyperlink==19.0.0         # via twisted
-idna==2.8                 # via hyperlink
-incremental==17.5.0       # via twisted
-lxml==4.4.0               # via parsel, scrapy
-parsel==1.5.2             # via scrapy
+asn1crypto==0.24.0
+    # via cryptography
+attrs==19.1.0
+    # via
+    #   automat
+    #   service-identity
+    #   twisted
+automat==0.7.0
+    # via twisted
+cffi==1.12.3
+    # via cryptography
+constantly==15.1.0
+    # via twisted
+cryptography==2.7
+    # via
+    #   pyopenssl
+    #   service-identity
+cssselect==1.1.0
+    # via
+    #   parsel
+    #   scrapy
+enum34==1.1.10
+    # via cryptography
+functools32==3.2.3.post2
+    # via parsel
+hyperlink==19.0.0
+    # via twisted
+idna==2.8
+    # via hyperlink
+incremental==17.5.0
+    # via twisted
+ipaddress==1.0.23
+    # via
+    #   cryptography
+    #   service-identity
+lxml==4.4.0
+    # via
+    #   parsel
+    #   scrapy
+parsel==1.5.2
+    # via scrapy
 pipdeptree==0.13.2
-pyasn1-modules==0.2.6     # via service-identity
-pyasn1==0.4.6             # via pyasn1-modules, service-identity
-pycparser==2.19           # via cffi
-pydispatcher==2.0.5       # via scrapy
-pyhamcrest==1.9.0         # via twisted
-pyopenssl==19.0.0         # via scrapy
-queuelib==1.5.0           # via scrapy
+    # via -r requirements.in
+pyasn1-modules==0.2.6
+    # via service-identity
+pyasn1==0.4.6
+    # via
+    #   pyasn1-modules
+    #   service-identity
+pycparser==2.19
+    # via cffi
+pydispatcher==2.0.5
+    # via scrapy
+pyhamcrest==1.9.0
+    # via twisted
+pyopenssl==19.0.0
+    # via scrapy
+queuelib==1.5.0
+    # via scrapy
 scrapy==1.7.3
+    # via -r requirements.in
 selenium==3.141.0
-service-identity==18.1.0  # via scrapy
-six==1.12.0               # via automat, cryptography, parsel, pyhamcrest, pyopenssl, scrapy, w3lib
-twisted==19.7.0           # via scrapy
-urllib3==1.25.3           # via selenium
-w3lib==1.21.0             # via parsel, scrapy
-zope.interface==4.6.0     # via twisted
+    # via -r requirements.in
+service-identity==18.1.0
+    # via scrapy
+six==1.12.0
+    # via
+    #   automat
+    #   cryptography
+    #   parsel
+    #   pyhamcrest
+    #   pyopenssl
+    #   scrapy
+    #   w3lib
+twisted==19.7.0
+    # via scrapy
+urllib3==1.26.5
+    # via selenium
+w3lib==1.21.0
+    # via
+    #   parsel
+    #   scrapy
+zope.interface==4.6.0
+    # via twisted
 
 # The following packages are considered to be unsafe in a requirements file:
-# pip==19.2.1               # via pipdeptree
-# setuptools==41.0.1        # via pyhamcrest, zope.interface
+# pip
+# setuptools
